@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Quran Audio, Quran-api, Quran Api, Quran Audio Api,  listian All surah in Audio ">
+  <meta name="keywords" content="Quran Audio, Quran-api, Quran Api, Quran Audio Api">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ramadan |رمضان</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+  <link rel="manifest" href="./manifest.json">
+  <meta name="msapplication-TileColor" content="#198754">
+<link rel="icon" type="image/png" href="images/ramadan2.png" />
+  <meta name="theme-color" content="#198754">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* set font size to 10px */
+  font-size: 62.5%;
+}
+
+.navbar-wrapper {
+  width: 100%;
+  height: 100vh;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ========== Navbar === */
+
+.navbar {
+  width: 20rem;
+  height: 20rem;
+  
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transform: scale(0) rotate(-180deg);
+  transition: transform 0.5s;
+}
+
+.change .navbar {
+  transform: scale(1) rotate(0);
+}
+
+/* ========== Icons === */
+
+.navbar-link {
+  position: absolute;
+}
+
+.navbar-link i {
+  font-size: 2.5rem;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.navbar-link:hover i {
+  color: #12c095;
+}
+
+.navbar-link:nth-child(1) {
+  top: 2rem;
+}
+
+.navbar-link:nth-child(2) {
+  top: 6rem;
+  right: 2rem;
+}
+
+.navbar-link:nth-child(3) {
+  bottom: 6rem;
+  right: 2rem;
+}
+
+.navbar-link:nth-child(4) {
+  bottom: 2rem;
+}
+
+.navbar-link:nth-child(5) {
+  bottom: 6rem;
+  left: 2rem;
+}
+
+.navbar-link:nth-child(6) {
+  top: 6rem;
+  left: 2rem;
+}
+
+/* ========== Button === */
+
+.navbar-btn {
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
+  background-color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.navbar-btn i {
+  font-size: 2rem;
+  color: #fff;
+  transition: transform 0.5s;
+}
+
+.change .navbar-btn i {
+  transform: rotate(45deg);
+}
+
+</style>
+</head>
+
+<body>
+  
+<div style="background-image: url('ramadan1.jpg');background-repeat: no-repeat;background-size: cover;
+  background-position: center;
+  height: 100%;">
+  
+     <div class="navbar-wrapper">
+      <!-- icons -->
+      <div class="navbar">
+        <a href="#" class="navbar-link"><i class="fas fa-mosque"> </i> </a>
+        <a href="index.html" class="navbar-link"><i class="fas fa-quran"></i></a>
+        <a href="#" class="navbar-link"><i class="fas fa-music"></i></a>
+        <a href="#" class="navbar-link"><i class="fas fa-film"></i></a>
+        <a href="#" class="navbar-link"><i class="fas fa-home"></i></a>
+        <a href="#" class="navbar-link"><i class="fas fa-home"></i></a>
+      </div>
+
+      <!-- button -->
+      <div class="navbar-btn">
+
+        <i class="fa fa-moon"></i>
+      </div>
+    </div></div>
+  <script>
+    document.querySelector(".navbar-btn").addEventListener("click", () => {
+      document.querySelector(".navbar-wrapper").classList.toggle("change");
+    });
+  </script>
+  
+
+</body>
+
+</html>
