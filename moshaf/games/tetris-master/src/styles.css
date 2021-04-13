@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'DejaVuSansMono';
+  src: url("./DejaVuSansMono.ttf") format('truetype');
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #C2FFAE;
+}
+body {
+  margin: 0;
+}
+body, a, input, button {
+  background-color:#000000;
+  border:none;
+  color:#C2FFAE;
+  font-family: 'DejaVuSansMono', monospace;
+  font-size:12px;
+  line-height: 1.2;
+}
+a, .link {
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+a:hover, .link:hover {
+  text-decoration: underline;
+}
+button, input {
+  border: none;
+  outline:none;
+  text-transform: uppercase;
+}
+input {
+  border-bottom: 1px solid #C2FFAE;
+  width:80px;
+}
+#loading {
+  display:none;
+}
+#container {
+  display:block;
+  height:100%;
+  width:100%;
+  position: fixed;
+}
+#game, #leaderboard, #userboard {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  white-space: nowrap;
+}
+@media (max-height: 568px) {
+  #game {
+    top: 20%;
+    transform: translateX(-50%) translateY(-20%);
+  }
+}
+#leaderboard, #userboard {
+  background-color: #000000;
+  border: 1px solid #C2FFAE;
+  display: none;
+  padding: 40px 30px 20px;
+  z-index: 1;
+}
+#leaderboard {
+  padding: 40px 10px 20px 30px;
+}
+#score-leaders {
+  height: 280px;
+  overflow: auto;
+  margin-bottom: 10px;
+  padding-right: 20px;
+}
+@media (max-height: 400px) {
+  #score-leaders {
+    height: 120px;
+  }
+}
+#share {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  text-align: center;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+@media (max-height: 419px) {
+  #share {
+    display:none;
+  }
+}
+.controls {
+  bottom: 80px;
+  position: fixed;
+  z-index: 1;
+}
+@media (max-height: 419px) {
+  .controls {
+    bottom: 0;
+  }
+}
+.controls.left {
+  left:0;
+}
+.controls.right {
+  right:0;
+}
+.controls.top {
+  height:0;
+  right:0;
+  top:0;
+}
+@media (max-height: 419px) {
+  .controls.top {
+    display:none;
+  }
+}
+.controls > button {
+  background-color: transparent;
+  width:80px;
+  height:80px;
+  display:block;
+}
